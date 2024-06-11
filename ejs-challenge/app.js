@@ -44,10 +44,9 @@ app.post("/compose", function(req,res){
   res.redirect("/");
 });
 
-
-
-
-
+app.get("/posts/:PostName", function(req,res){
+  console.log(req.params.PostName)
+})
 
 
 app.listen(3000, function() {
