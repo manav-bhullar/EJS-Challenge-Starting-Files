@@ -10,6 +10,12 @@
 
     <p> <%= startingContent %></p>
 
+    <% console.log(posts) %>
+
+    <!-- <%for(let i = 0 ; i<posts.lenght; i++) {%> -->
+    <% posts.forEach(function(post){ %>
+       <h1> <%= post.title  %> </h1>
+         <p> <%= post.content %> </p>
     <%- include('partials/footer') -%>
 </body>
 </html>
